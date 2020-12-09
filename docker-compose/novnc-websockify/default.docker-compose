@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  novnc-websockify:
+    build:
+      context:      './../../docker/novnc-websockify'
+      dockerfile:   'default.docker'
+    container_name: 'local_novnc-websockify'
+    env_file:
+      -             './../../container.env'
+    image:          'talsenteam/docker-novnc-websockify:v1.2.0-v0.9.0'
+    network_mode:   'host'
+    restart:        'no'
