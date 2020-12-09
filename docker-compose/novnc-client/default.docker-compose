@@ -8,6 +8,6 @@ services:
     container_name: 'local_novnc-client'
     env_file:
       -             './../../container.env'
-    image:          'talsenteam/docker-novnc-client:v0'
+    image:          'talsenteam/docker-novnc-client:v1.2.0-v0.9.0'
     network_mode:   'host'
     restart:        'no'
